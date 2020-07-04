@@ -11,9 +11,9 @@
 # Dump of table Js
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `Js`;
+DROP TABLE IF EXISTS `inputs`;
 
-CREATE TABLE `Js` (
+CREATE TABLE `inputs` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `description` text NOT NULL,
   `quantity` int(10) unsigned NOT NULL,
@@ -21,9 +21,9 @@ CREATE TABLE `Js` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `Js` WRITE;
+LOCK TABLES `inputs` WRITE;
 
-INSERT INTO `Js` (`id`, `description`, `quantity`, `unit_price`)
+INSERT INTO `inputs` (`id`, `description`, `quantity`, `unit_price`)
 VALUES
 	(1,'Cake',2,12.80),
 	(2,'Chair',1,300.10);
